@@ -10,3 +10,95 @@
     <% end %>
   </div>
 </section>
+
+<hr>
+
+<section id="products">
+  <header class="text-center">
+    <h2>Products</h2>
+  </header>
+  <table class="table table-striped text-center my-4">
+    <thead class="thead-inverse">
+      <tr>
+        <th></th>
+        <th class="text-center">Basic</th>
+        <th class="text-center">Pro</th>
+        <th class="text-center">Elite</th>
+      </tr>
+    </thead>
+    <tbody class="text-center">
+      <tr>
+        <th scope="row"><%= fa_icon 'link', text: 'Domain Name', class: 'fa-fw' %></th>
+        <td><%= feature_check %></td>
+        <td><%= feature_check %></td>
+        <td><%= feature_check %></td>
+      </tr>
+      <tr>
+        <th scope="row"><%= fa_icon 'mobile', text: 'Responsive Design', class: 'fa-fw' %></th>
+        <td><%= feature_check %></td>
+        <td><%= feature_check %></td>
+        <td><%= feature_check %></td>
+      </tr>
+      <tr>
+        <th scope="row"><%= fa_icon 'globe', text: 'Content Delivery Network (CDN)', class: 'fa-fw' %></th>
+        <td><%= feature_cross %></td>
+        <td><%= feature_check %></td>
+        <td><%= feature_check %></td>
+      </tr>
+      <tr>
+        <th scope="row"><%= fa_icon 'bolt', text: 'Speed Optimization', class: 'fa-fw' %></th>
+        <td><%= feature_cross %></td>
+        <td><%= feature_check %></td>
+        <td><%= feature_check %></td>
+      </tr>
+      <tr>
+        <th scope="row"><%= fa_icon 'search', text: 'Search Engine Optimization (SEO)', class: 'fa-fw' %></th>
+        <td><%= feature_cross %></td>
+        <td><%= feature_check %></td>
+        <td><%= feature_check %></td>
+      </tr>
+      <tr>
+        <th scope="row"><%= fa_icon 'lock', text: 'SSL Certificate', class: 'fa-fw' %></th>
+        <td><%= feature_cross %></td>
+        <td><%= feature_check %></td>
+        <td><%= feature_check %></td>
+      </tr>
+      <tr>
+        <th scope="row"><%= fa_icon 'shield', text: 'DDoS Protection', class: 'fa-fw' %></th>
+        <td><%= feature_cross %></td>
+        <td><%= feature_check %></td>
+        <td><%= feature_check %></td>
+      </tr>
+      <tr>
+        <th scope="row"><%= fa_icon 'line-chart', text: 'Analytics', class: 'fa-fw' %></th>
+        <td><%= feature_cross %></td>
+        <td><%= feature_check %></td>
+        <td><%= feature_check %></td>
+      </tr>
+      <tr>
+        <th scope="row"><%= fa_icon 'wrench', text: 'Content Management System (CMS)', class: 'fa-fw' %></th>
+        <td><%= feature_cross %></td>
+        <td><%= feature_cross %></td>
+        <td><%= feature_check %></td>
+      </tr>
+      <tr>
+        <th scope="row"><%= fa_icon 'language', text: 'Internationalization (i18n)', class: 'fa-fw' %></th>
+        <td><%= feature_cross %></td>
+        <td><%= feature_cross %></td>
+        <td><%= feature_check %></td>
+      </tr>
+      <tr>
+        <th scope="row"><%= fa_icon 'commenting', text: 'Live Chat', class: 'fa-fw' %></th>
+        <td><%= feature_cross %></td>
+        <td><%= feature_cross %></td>
+        <td><%= feature_check %></td>
+      </tr>
+      <tr>
+        <th scope="row"></th>
+        <td><button class="btn btn-primary">Start Now</button></td>
+        <td><button class="btn btn-primary">Start Now</button></td>
+        <td><button class="btn btn-primary">Start Now</button></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
