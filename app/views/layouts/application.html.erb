@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="<%= I18n.locale %>">
   <head>
     <title>Nimbyte</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/css/flag-icon.css" integrity="sha256-uNjm68xPD+6gnVc/JWO6c0TgsEu/PqsXTc9djrPqhOw=" crossorigin="anonymous" />
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
@@ -18,8 +19,22 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#products">Products</a>
+            <a class="nav-link" href="#plans"><%= t('sections.plans.name') %></a>
           </li>
+          <% if I18n.locale != :en %>
+          <li class="nav-item">
+            <%= link_to({ locale: :en }, { class: 'nav-link' }) do %>
+              English <span class="flag-icon flag-icon-gb"></span>
+            <% end %>
+          </li>
+          <% end %>
+          <% if I18n.locale != :es %>
+          <li class="nav-item">
+            <%= link_to({ locale: :es }, { class: 'nav-link' }) do %>
+              Español <span class="flag-icon flag-icon-es"></span>
+            <% end %>
+          </li>
+          <% end %>
         </ul>
       </div>
     </nav>
@@ -28,7 +43,7 @@
     </div>
     <footer>
       <div class="container py-4">
-        <span class="text-muted">© 2017 Nimbyte. All rights reserved.</span>
+        <span class="text-muted">© 2017 Nimbyte. <%= t('footer.rights') %></span>
       </div>
     </footer>
   </body>

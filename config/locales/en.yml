@@ -20,4 +20,50 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  sections:
+    plans:
+      name: Plans
+  plans:
+    starter:
+      name: Starter
+      get: Get Starter
+    pro:
+      name: Pro
+      get: Get Pro
+    premium:
+      name: Premium
+      get: Get Premium
+  features:
+    responsive-design:
+      name: Responsive Web Design
+      info: Responsive Web Design is an approach to web design aimed at allowing desktop webpages to be viewed in response to the size of the screen or web browser one is viewing with.
+    web-hosting:
+      name: Web Hosting
+    domain:
+      name: Domain Name
+    seo:
+      name: Search Engine Optimization (SEO)
+    speed:
+      name: Speed Optimization
+    cdn:
+      name: Content Delivery Network (CDN)
+      info: A content delivery network is a globally distributed network of proxy servers deployed in multiple data centers. The goal of a CDN is to serve content to end-users with high availability and high performance.
+    analytics:
+      name: Web Analytics
+      info: Web analytics is the measurement, collection, analysis and reporting of web data for purposes of understanding and optimizing web usage.
+    tls:
+      name: TLS/SSL Support
+      info: Transport Layer Security (TLS) and its predecessor, Secure Sockets Layer (SSL), both frequently referred to as "SSL", are cryptographic protocols that provide communications security over a computer network.
+    ddos:
+      name: DDoS Protection
+      info: Distributed Denial of Service (DDoS) attacks seek to make a machine or network resource unavailable to its intended users. We seek to protect you from them.
+    cms:
+      name: Content Management System (CMS)
+      info: A content management system (CMS) is a computer application that supports the creation and modification of digital content.
+    i18n:
+      name: Internationalization (i18n)
+      info: Internationalization (i18n) is the process of designing a software application so that it can potentially be adapted to various languages and regions without engineering changes.
+    live-chat:
+      name: Live Chat
+  footer:
+    rights: All rights reserved.
