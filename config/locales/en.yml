@@ -43,6 +43,7 @@ en:
       name: Domain Name
     seo:
       name: Search Engine Optimization (SEO)
+      info: Search engine optimization (SEO) is the process of affecting the visibility of a website or a web page in a web search engine's unpaid results—often referred to as "natural", "organic", or "earned" results.
     speed:
       name: Speed Optimization
     cdn:
