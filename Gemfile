@@ -46,6 +46,9 @@ end
 # Use Font Awesome for icons support
 gem "font-awesome-rails"
 
+# Use Animate.css for animation support
+gem "animate-rails"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
