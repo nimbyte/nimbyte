@@ -1,95 +1,63 @@
-<section id="plans">
+<section id="products">
   <header class="text-center">
-    <%= content_tag :h2, t('sections.plans.name') %>
+    <%= content_tag :h2, t('sections.products.name') %>
   </header>
-  <table class="table table-striped text-center my-4">
-    <thead class="thead-inverse">
-      <tr>
-        <th></th>
-        <th class="text-center"><%= t('plans.starter.name') %></th>
-        <th class="text-center"><%= t('plans.pro.name') %></th>
-        <th class="text-center"><%= t('plans.premium.name') %></th>
-      </tr>
-    </thead>
-    <tbody class="text-center">
-      <tr>
-        <th scope="row"><%= fa_icon 'mobile', text: t('features.responsive-design.name'), class: 'fa-fw' %> <%= info_tooltip t('features.responsive-design.info') %></th>
-        <td><%= feature_check %></td>
-        <td><%= feature_check %></td>
-        <td><%= feature_check %></td>
-      </tr>
-      <tr>
-        <th scope="row"><%= fa_icon 'server', text: t('features.web-hosting.name'), class: 'fa-fw' %></th>
-        <td><%= feature_check %></td>
-        <td><%= feature_check %></td>
-        <td><%= feature_check %></td>
-      </tr>
-      <tr>
-        <th scope="row"><%= fa_icon 'link', text: t('features.domain.name'), class: 'fa-fw' %></th>
-        <td><%= feature_check %></td>
-        <td><%= feature_check %></td>
-        <td><%= feature_check %></td>
-      </tr>
-      <tr>
-        <th scope="row"><%= fa_icon 'search', text: t('features.seo.name'), class: 'fa-fw' %> <%= info_tooltip t('features.seo.info') %></th>
-        <td><%= feature_cross %></td>
-        <td><%= feature_check %></td>
-        <td><%= feature_check %></td>
-      </tr>
-      <tr>
-        <th scope="row"><%= fa_icon 'bolt', text: t('features.speed.name'), class: 'fa-fw' %></th>
-        <td><%= feature_cross %></td>
-        <td><%= feature_check %></td>
-        <td><%= feature_check %></td>
-      </tr>
-      <tr>
-        <th scope="row"><%= fa_icon 'globe', text: t('features.cdn.name'), class: 'fa-fw' %> <%= info_tooltip t('features.cdn.info') %></th>
-        <td><%= feature_cross %></td>
-        <td><%= feature_check %></td>
-        <td><%= feature_check %></td>
-      </tr>
-      <tr>
-        <th scope="row"><%= fa_icon 'line-chart', text: t('features.analytics.name'), class: 'fa-fw' %> <%= info_tooltip t('features.analytics.info') %></th>
-        <td><%= feature_cross %></td>
-        <td><%= feature_check %></td>
-        <td><%= feature_check %></td>
-      </tr>
-      <tr>
-        <th scope="row"><%= fa_icon 'lock', text: t('features.tls.name'), class: 'fa-fw' %> <%= info_tooltip t('features.tls.info') %></th>
-        <td><%= feature_cross %></td>
-        <td><%= feature_check %></td>
-        <td><%= feature_check %></td>
-      </tr>
-      <tr>
-        <th scope="row"><%= fa_icon 'shield', text: t('features.ddos.name'), class: 'fa-fw' %> <%= info_tooltip t('features.ddos.info') %></th>
-        <td><%= feature_cross %></td>
-        <td><%= feature_check %></td>
-        <td><%= feature_check %></td>
-      </tr>
-      <tr>
-        <th scope="row"><%= fa_icon 'wrench', text: t('features.cms.name'), class: 'fa-fw' %> <%= info_tooltip t('features.cms.info') %></th>
-        <td><%= feature_cross %></td>
-        <td><%= feature_cross %></td>
-        <td><%= feature_check %></td>
-      </tr>
-      <tr>
-        <th scope="row"><%= fa_icon 'language', text: t('features.i18n.name'), class: 'fa-fw' %> <%= info_tooltip t('features.i18n.info') %></th>
-        <td><%= feature_cross %></td>
-        <td><%= feature_cross %></td>
-        <td><%= feature_check %></td>
-      </tr>
-      <tr>
-        <th scope="row"><%= fa_icon 'commenting', text: t('features.live-chat.name'), class: 'fa-fw' %></th>
-        <td><%= feature_cross %></td>
-        <td><%= feature_cross %></td>
-        <td><%= feature_check %></td>
-      </tr>
-      <tr>
-        <th scope="row"></th>
-        <td><button class="btn btn-primary" onclick="window.location.href='mailto:info@nimbyte.com'"><%= t('plans.starter.get') %></button></td>
-        <td><button class="btn btn-primary" onclick="window.location.href='mailto:info@nimbyte.com'"><%= t('plans.pro.get') %></button></td>
-        <td><button class="btn btn-primary" onclick="window.location.href='mailto:info@nimbyte.com'"><%= t('plans.premium.get') %></button></td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="row">
+    <div class="col-lg-4 mb-4">
+      <div class="card plan-basic text-center">
+        <div class="card-header card-inverse">
+          <h3 class="card-title"><%= t('products.starter.name') %></h3>
+        </div>
+        <div class="card-block">
+          <ul class="card-text list-unstyled">
+            <li><%= fa_icon 'mobile', text: t('features.responsive-design.name'), class: 'fa-fw' %> <%= info_tooltip t('features.responsive-design.info') %></li>
+            <li><%= fa_icon 'server', text: t('features.web-hosting.name'), class: 'fa-fw' %></li>
+            <li><%= fa_icon 'link', text: t('features.domain.name'), class: 'fa-fw' %></li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <a class="btn btn-primary" href="mailto:info@nimbyte.com"><%= t('products.get') %></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 mb-4">
+      <div class="card plan-pro text-center">
+        <div class="card-header card-inverse">
+          <h3 class="card-title"><%= t('products.pro.name') %></h3>
+        </div>
+        <div class="card-block">
+          <ul class="card-text list-unstyled">
+            <li><%= fa_icon 'plus', text: t('features.starter-plus.name'), class: 'fa-fw' %></li>
+            <li><%= fa_icon 'search', text: t('features.seo.name'), class: 'fa-fw' %> <%= info_tooltip t('features.seo.info') %></li>
+            <li><%= fa_icon 'bolt', text: t('features.speed.name'), class: 'fa-fw' %></li>
+            <li><%= fa_icon 'globe', text: t('features.cdn.name'), class: 'fa-fw' %> <%= info_tooltip t('features.cdn.info') %></li>
+            <li><%= fa_icon 'line-chart', text: t('features.analytics.name'), class: 'fa-fw' %> <%= info_tooltip t('features.analytics.info') %></li>
+            <li><%= fa_icon 'lock', text: t('features.tls.name'), class: 'fa-fw' %> <%= info_tooltip t('features.tls.info') %></li>
+            <li><%= fa_icon 'shield', text: t('features.ddos.name'), class: 'fa-fw' %> <%= info_tooltip t('features.ddos.info') %></li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <a class="btn btn-primary" href="mailto:info@nimbyte.com"><%= t('products.get') %></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 mb-4">
+      <div class="card plan-premium text-center">
+        <div class="card-header card-inverse">
+          <h3><%= t('products.premium.name') %></h3>
+        </div>
+        <div class="card-block">
+          <ul class="card-text list-unstyled">
+            <li><%= fa_icon 'plus', text: t('features.pro-plus.name'), class: 'fa-fw' %></li>
+            <li><%= fa_icon 'wrench', text: t('features.cms.name'), class: 'fa-fw' %> <%= info_tooltip t('features.cms.info') %></li>
+            <li><%= fa_icon 'language', text: t('features.i18n.name'), class: 'fa-fw' %> <%= info_tooltip t('features.i18n.info') %></li>
+            <li><%= fa_icon 'commenting', text: t('features.live-chat.name'), class: 'fa-fw' %></li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <a class="btn btn-primary" href="mailto:info@nimbyte.com"><%= t('products.get') %></a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>

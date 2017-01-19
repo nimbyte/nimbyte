@@ -1,18 +1,20 @@
 es:
   sections:
-    plans:
-      name: Planes
-  plans:
+    products:
+      name: Productos
+  products:
     starter:
-      name: Inicial
-      get: Obtener Inicial
+      name: Pack Inicial
     pro:
-      name: Pro
-      get: Obtener Pro
+      name: Pack Pro
     premium:
-      name: Premium
-      get: Obtener Premium
+      name: Pack Premium
+    get: Obtener
   features:
+    starter-plus:
+      name: Pack Inicial
+    pro-plus:
+      name: Pack Pro
     responsive-design:
       name: Diseño Web Adaptable
       info: El diseño web adaptable es una filosofía de diseño y desarrollo cuyo objetivo es adaptar la apariencia de las páginas web al dispositivo que se esté utilizando para visualizarlas.
@@ -21,12 +23,12 @@ es:
     domain:
       name: Nombre de Dominio
     seo:
-      name: Posicionamiento en Buscadores (SEO)
+      name: Posicionamiento en Buscadores
       info: El posicionamiento en buscadores es el proceso técnico mediante el cual se realizan cambios en la estructura e información de una página web, con el objetivo de mejorar la visibilidad de un sitio web en los resultados orgánicos de los diferentes buscadores.
     speed:
       name: Optimización de Velocidad
     cdn:
-      name: Red de Entrega de Contenidos (CDN)
+      name: Red de Entrega de Contenidos
       info: Una red de entrega de contenidos es una red superpuesta de computadoras que contienen copias de datos, colocados en varios puntos de una red con el fin de maximizar el ancho de banda para el acceso a los datos de clientes por la red.
     analytics:
       name: Análisis Web
@@ -38,10 +40,10 @@ es:
       name: Protección DDoS
       info: En seguridad informática, un ataque de denegación de servicio, también llamado ataque DDoS, es un ataque a un sistema de computadoras o red que causa que un servicio o recurso sea inaccesible a los usuarios legítimos.
     cms:
-      name: Sistema de Gestión de Contenidos (CMS)
+      name: Sistema de Gestión de Contenidos
       info: Un sistema de gestión de contenidos es un programa informático que permite crear una estructura de soporte para la creación y administración de contenidos, principalmente en páginas web, por parte de los administradores, editores, participantes y demás usuarios.
     i18n:
-      name: Internacionalización (i18n)
+      name: Internacionalización
       info: La internacionalización (i18n) es el proceso de diseñar software de manera tal que pueda adaptarse a diferentes idiomas y regiones sin la necesidad de realizar cambios de ingeniería ni en el código.
     live-chat:
       name: Chat en Vivo

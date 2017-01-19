@@ -20,13 +20,32 @@ footer {
 }
 
 .plan-basic {
-  border-color: red;
+  &.card {
+    border-color: rgba(95,211,149,1);
+  }
+  .card-header {
+    background: linear-gradient(to right, rgba(95,211,149,1) 0%, rgba(59,201,132,1) 100%);
+  }
 }
 
 .plan-pro {
-  border-color: green;
+  &.card {
+    border-color: rgba(73,155,234,1);
+  }
+  .card-header {
+    background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+  }
 }
 
-.plan-elite {
-  border-color: blue;
+.plan-premium {
+  &.card {
+    border-color: rgba(203,96,179,1);
+  }
+  .card-header {
+    background: linear-gradient(to right, rgba(203,96,179,1) 0%, rgba(168,0,119,1) 100%);
+  }
+}
+
+.card {
+  height: 100%;
 }

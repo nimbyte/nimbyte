@@ -21,19 +21,21 @@
 
 en:
   sections:
-    plans:
-      name: Plans
-  plans:
+    products:
+      name: Products
+  products:
     starter:
-      name: Starter
-      get: Get Starter
+      name: Starter Pack
     pro:
-      name: Pro
-      get: Get Pro
+      name: Pro Pack
     premium:
-      name: Premium
-      get: Get Premium
+      name: Premium Pack
+    get: Start Now
   features:
+    starter-plus:
+      name: All Starter Features
+    pro-plus:
+      name: All Pro Features
     responsive-design:
       name: Responsive Web Design
       info: Responsive Web Design is an approach to web design aimed at allowing desktop webpages to be viewed in response to the size of the screen or web browser one is viewing with.
@@ -42,12 +44,12 @@ en:
     domain:
       name: Domain Name
     seo:
-      name: Search Engine Optimization (SEO)
+      name: Search Engine Optimization
       info: Search engine optimization (SEO) is the process of affecting the visibility of a website or a web page in a web search engine's unpaid results—often referred to as "natural", "organic", or "earned" results.
     speed:
       name: Speed Optimization
     cdn:
-      name: Content Delivery Network (CDN)
+      name: Content Delivery Network
       info: A content delivery network is a globally distributed network of proxy servers deployed in multiple data centers. The goal of a CDN is to serve content to end-users with high availability and high performance.
     analytics:
       name: Web Analytics
@@ -59,10 +61,10 @@ en:
       name: DDoS Protection
       info: Distributed Denial of Service (DDoS) attacks seek to make a machine or network resource unavailable to its intended users. We seek to protect you from them.
     cms:
-      name: Content Management System (CMS)
+      name: Content Management System
       info: A content management system (CMS) is a computer application that supports the creation and modification of digital content.
     i18n:
-      name: Internationalization (i18n)
+      name: Internationalization
       info: Internationalization (i18n) is the process of designing a software application so that it can potentially be adapted to various languages and regions without engineering changes.
     live-chat:
       name: Live Chat

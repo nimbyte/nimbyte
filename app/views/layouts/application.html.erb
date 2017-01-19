@@ -16,12 +16,12 @@
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">Nimbyte</a>
+      <a class="navbar-brand" href="#"><%= fa_icon 'cloud', text: "Nimbyte" %></a>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#plans"><%= t('sections.plans.name') %></a>
+            <a class="nav-link" href="#products"><%= t('sections.products.name') %></a>
           </li>
           <% if I18n.locale != :en %>
           <li class="nav-item">

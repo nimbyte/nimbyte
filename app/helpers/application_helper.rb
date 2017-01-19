@@ -16,7 +16,7 @@ module ApplicationHelper
   end
 
   def info_tooltip(text)
-    content_tag :i, class: 'fa fa-question-circle-o', data: {toggle: 'tooltip', placement: 'right', title: text}, 'aria-hidden': true do
+    content_tag :i, class: 'fa fa-question-circle-o', data: {toggle: 'tooltip', placement: 'top', title: text}, 'aria-hidden': true do
     end
   end
 end
