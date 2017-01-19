@@ -23,6 +23,10 @@ en:
   sections:
     products:
       name: Products
+  hero:
+    heading: We Are Web Masters
+    first-paragraph: We develop beautiful, fast and secure web applications using the latest technologies.
+    second-paragraph: Our products look great in any device, are faster than 99% other applications, and are virtually unhackable.
   products:
     starter:
       name: Starter Pack

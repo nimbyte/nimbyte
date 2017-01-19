@@ -2,6 +2,10 @@ es:
   sections:
     products:
       name: Productos
+  hero:
+    heading: Somos Maestros Web
+    first-paragraph: Creamos aplicaciones atractivas, rápidas y seguras utilizando las últimas tecnologías web.
+    second-paragraph: Nuestros products se ven fantásticos en cualquier dispositivo, son más rápidos que el 99% de las demás aplicaciones, y son virtualmente impenetrables.
   products:
     starter:
       name: Pack Inicial
