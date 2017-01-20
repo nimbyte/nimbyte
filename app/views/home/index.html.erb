@@ -1,4 +1,4 @@
-<section id="hero" class="text-center animated slideInUp">
+<section id="hero" class="text-center mb-5">
   <div class="jumbotron">
     <h1 class="display-3"><%= t('hero.heading') %></h1>
     <p class="lead"><%= t('hero.first-paragraph') %></p>
@@ -7,9 +7,49 @@
   </div>
 </section>
 
+<section id="features" class="text-center mb-5">
+  <header class="mb-5">
+    <%= content_tag :h2, t('sections.features.name'), class: 'display-4' %>
+    <p class="lead"><%= t('sections.features.description') %></p>
+  </header>
+  <div class="row">
+    <div class="col-md-4">
+      <%= fa_icon 'mobile', class: 'fa-fw fa-3x' %>
+      <h3><%= t('features.responsive-design.name') %></h3>
+      <p><%= t('features.responsive-design.description') %></p>
+    </div>
+    <div class="col-md-4">
+      <%= fa_icon 'bolt', class: 'fa-fw fa-3x' %>
+      <h3><%= t('features.speed.name') %></h3>
+      <p><%= t('features.speed.description') %></p>
+    </div>
+    <div class="col-md-4">
+      <%= fa_icon 'lock', class: 'fa-fw fa-3x' %>
+      <h3><%= t('features.security.name') %></h3>
+      <p><%= t('features.security.description') %></p>
+    </div>
+    <div class="col-md-4">
+      <%= fa_icon 'share-alt', class: 'fa-fw fa-3x' %>
+      <h3><%= t('features.social.name') %></h3>
+      <p><%= t('features.social.description') %></p>
+    </div>
+    <div class="col-md-4">
+      <%= fa_icon 'code', class: 'fa-fw fa-3x' %>
+      <h3><%= t('features.coding.name') %></h3>
+      <p><%= t('features.coding.description') %></p>
+    </div>
+    <div class="col-md-4">
+      <%= fa_icon 'info-circle', class: 'fa-fw fa-3x' %>
+      <h3><%= t('features.support.name') %></h3>
+      <p><%= t('features.support.description') %></p>
+    </div>
+  </div>
+</section>
+
 <section id="products" class="animated fadeIn">
-  <header class="text-center">
+  <header class="text-center mb-5">
     <%= content_tag :h2, t('sections.products.name'), class: 'display-4' %>
+    <p class="lead"><%= t('sections.products.description') %></p>
   </header>
   <div class="row">
     <div class="col-lg-4 mb-4">
@@ -19,9 +59,9 @@
         </div>
         <div class="card-block">
           <ul class="card-text list-unstyled">
-            <li><%= fa_icon 'mobile', text: t('features.responsive-design.name'), class: 'fa-fw' %> <%= info_tooltip t('features.responsive-design.info') %></li>
-            <li><%= fa_icon 'server', text: t('features.web-hosting.name'), class: 'fa-fw' %></li>
-            <li><%= fa_icon 'link', text: t('features.domain.name'), class: 'fa-fw' %></li>
+            <li><%= fa_icon 'mobile', text: t('products.features.responsive-design.name'), class: 'fa-fw' %> <%= info_tooltip t('products.features.responsive-design.info') %></li>
+            <li><%= fa_icon 'server', text: t('products.features.web-hosting.name'), class: 'fa-fw' %></li>
+            <li><%= fa_icon 'link', text: t('products.features.domain.name'), class: 'fa-fw' %></li>
           </ul>
         </div>
         <div class="card-footer">
@@ -36,13 +76,13 @@
         </div>
         <div class="card-block">
           <ul class="card-text list-unstyled">
-            <li><%= fa_icon 'plus', text: t('features.starter-plus.name'), class: 'fa-fw' %></li>
-            <li><%= fa_icon 'search', text: t('features.seo.name'), class: 'fa-fw' %> <%= info_tooltip t('features.seo.info') %></li>
-            <li><%= fa_icon 'bolt', text: t('features.speed.name'), class: 'fa-fw' %></li>
-            <li><%= fa_icon 'globe', text: t('features.cdn.name'), class: 'fa-fw' %> <%= info_tooltip t('features.cdn.info') %></li>
-            <li><%= fa_icon 'line-chart', text: t('features.analytics.name'), class: 'fa-fw' %> <%= info_tooltip t('features.analytics.info') %></li>
-            <li><%= fa_icon 'lock', text: t('features.tls.name'), class: 'fa-fw' %> <%= info_tooltip t('features.tls.info') %></li>
-            <li><%= fa_icon 'shield', text: t('features.ddos.name'), class: 'fa-fw' %> <%= info_tooltip t('features.ddos.info') %></li>
+            <li><%= fa_icon 'plus', text: t('products.features.starter-plus.name'), class: 'fa-fw' %></li>
+            <li><%= fa_icon 'search', text: t('products.features.seo.name'), class: 'fa-fw' %> <%= info_tooltip t('products.features.seo.info') %></li>
+            <li><%= fa_icon 'bolt', text: t('products.features.speed.name'), class: 'fa-fw' %></li>
+            <li><%= fa_icon 'globe', text: t('products.features.cdn.name'), class: 'fa-fw' %> <%= info_tooltip t('products.features.cdn.info') %></li>
+            <li><%= fa_icon 'line-chart', text: t('products.features.analytics.name'), class: 'fa-fw' %> <%= info_tooltip t('products.features.analytics.info') %></li>
+            <li><%= fa_icon 'lock', text: t('products.features.tls.name'), class: 'fa-fw' %> <%= info_tooltip t('products.features.tls.info') %></li>
+            <li><%= fa_icon 'shield', text: t('products.features.ddos.name'), class: 'fa-fw' %> <%= info_tooltip t('products.features.ddos.info') %></li>
           </ul>
         </div>
         <div class="card-footer">
@@ -57,10 +97,10 @@
         </div>
         <div class="card-block">
           <ul class="card-text list-unstyled">
-            <li><%= fa_icon 'plus', text: t('features.pro-plus.name'), class: 'fa-fw' %></li>
-            <li><%= fa_icon 'wrench', text: t('features.cms.name'), class: 'fa-fw' %> <%= info_tooltip t('features.cms.info') %></li>
-            <li><%= fa_icon 'language', text: t('features.i18n.name'), class: 'fa-fw' %> <%= info_tooltip t('features.i18n.info') %></li>
-            <li><%= fa_icon 'commenting', text: t('features.live-chat.name'), class: 'fa-fw' %></li>
+            <li><%= fa_icon 'plus', text: t('products.features.pro-plus.name'), class: 'fa-fw' %></li>
+            <li><%= fa_icon 'wrench', text: t('products.features.cms.name'), class: 'fa-fw' %> <%= info_tooltip t('products.features.cms.info') %></li>
+            <li><%= fa_icon 'language', text: t('products.features.i18n.name'), class: 'fa-fw' %> <%= info_tooltip t('products.features.i18n.info') %></li>
+            <li><%= fa_icon 'commenting', text: t('products.features.live-chat.name'), class: 'fa-fw' %></li>
           </ul>
         </div>
         <div class="card-footer">
