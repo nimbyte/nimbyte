@@ -1,4 +1,4 @@
-<section id="hero" class="text-center mb-5">
+<section id="hero" class="text-center mb-5 wow zoomIn">
   <div class="jumbotron">
     <h1 class="display-3"><%= t('hero.heading') %></h1>
     <p class="lead"><%= t('hero.first-paragraph') %></p>
@@ -7,7 +7,7 @@
   </div>
 </section>
 
-<section id="features" class="text-center mb-5">
+<section id="features" class="text-center mb-5 wow slideInLeft">
   <header class="mb-5">
     <%= content_tag :h2, t('sections.features.name'), class: 'display-4' %>
     <p class="lead"><%= t('sections.features.description') %></p>
@@ -46,7 +46,7 @@
   </div>
 </section>
 
-<section id="products" class="animated fadeIn">
+<section id="products" class="products wow slideInRight">
   <header class="text-center mb-5">
     <%= content_tag :h2, t('sections.products.name'), class: 'display-4' %>
     <p class="lead"><%= t('sections.products.description') %></p>
@@ -70,7 +70,7 @@
       </div>
     </div>
     <div class="col-lg-4 mb-4">
-      <div class="card plan-pro text-center">
+      <div class="card plan-pro text-center animated infinite pulse">
         <div class="card-header card-inverse">
           <h3 class="card-title"><%= t('products.pro.name') %></h3>
         </div>

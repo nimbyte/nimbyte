@@ -46,8 +46,11 @@ end
 # Use Font Awesome for icons support
 gem "font-awesome-rails"
 
-# Use Animate.css for animation support
+# Use Animate.css for animations support
 gem "animate-rails"
+
+# Use WOW.js for reveal animations support
+gem 'wow-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

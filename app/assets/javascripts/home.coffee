@@ -5,3 +5,5 @@
 $(document).on 'turbolinks:load', ->
   $('[data-toggle="tooltip"]').tooltip()
   return
+
+(new WOW).init()
