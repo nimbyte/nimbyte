@@ -27,6 +27,9 @@ en:
     products:
       name: Products
       description: We have the right product for your needs.
+    contact:
+      name: Contact
+      description: We want to know about you! Leave us a message and we'll get back to you ASAP.
   hero:
     heading: We Are Web Masters
     first-paragraph: We develop beautiful, fast and secure web applications using the latest technologies.
@@ -95,5 +98,11 @@ en:
         info: Internationalization (i18n) is the process of designing a software application so that it can potentially be adapted to various languages and regions without engineering changes.
       live-chat:
         name: Live Chat
+  contact:
+    name: Name
+    email: Email
+    message: Message
+    send: Send
+    thanks: Thanks for your message! We'll get back to you ASAP.
   footer:
     rights: All rights reserved.

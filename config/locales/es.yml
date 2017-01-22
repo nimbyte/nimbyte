@@ -6,6 +6,9 @@ es:
     products:
       name: Productos
       description: Tenemos el producto justo para sus necesidades.
+    contact:
+      name: Contacto
+      description: ¡Queremos conocerlo! Déjenos un mensaje y lo contactaremos a la brevedad.
   hero:
     heading: Somos Maestros Web
     first-paragraph: Creamos aplicaciones atractivas, rápidas y seguras utilizando las últimas tecnologías web.
@@ -74,5 +77,11 @@ es:
         info: La internacionalización (i18n) es el proceso de diseñar software de manera tal que pueda adaptarse a diferentes idiomas y regiones sin la necesidad de realizar cambios de ingeniería ni en el código.
       live-chat:
         name: Chat en Vivo
+  contact:
+    name: Nombre
+    email: Email
+    message: Mensaje
+    send: Enviar
+    thanks: ¡Gracias por su mensaje! Le responderemos a la brevedad.
   footer:
     rights: Todos los derechos reservados.

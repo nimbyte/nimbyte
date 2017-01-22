@@ -26,6 +26,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#products"><%= t('sections.products.name') %></a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact"><%= t('sections.contact.name') %></a>
+          </li>
           <% if I18n.locale != :en %>
           <li class="nav-item">
             <%= link_to({ locale: :en }, { class: 'nav-link' }) do %>
@@ -44,6 +47,11 @@
       </div>
     </nav>
     <div class="container">
+      <% if flash[:notice] %>
+        <div class="alert alert-success" role="alert">
+          <%= flash[:notice] %>
+        </div>
+      <% end %>
       <%= yield %>
     </div>
     <footer>
