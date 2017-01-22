@@ -7,3 +7,14 @@ $(document).on 'turbolinks:load', ->
   return
 
 (new WOW).init()
+
+$ ->
+  $('a[href*="#"]:not([href="#"])').click ->
+    if location.pathname.replace(/^\//, '') == @pathname.replace(/^\//, '') and location.hostname == @hostname
+      target = $(@hash)
+      target = if target.length then target else $('[name=' + @hash.slice(1) + ']')
+      if target.length
+        $('html, body').animate { scrollTop: target.offset().top }, 500
+        return false
+    return
+  return
