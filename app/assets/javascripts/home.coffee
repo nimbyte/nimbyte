@@ -4,11 +4,8 @@
 
 $(document).on 'turbolinks:load', ->
   $('[data-toggle="tooltip"]').tooltip()
-  return
 
-(new WOW).init()
-
-$ ->
+  # Smooth Scrolling
   $('a[href*="#"]:not([href="#"])').click ->
     if location.pathname.replace(/^\//, '') == @pathname.replace(/^\//, '') and location.hostname == @hostname
       target = $(@hash)
@@ -18,3 +15,5 @@ $ ->
         return false
     return
   return
+
+(new WOW).init()
